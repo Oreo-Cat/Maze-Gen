@@ -33,8 +33,9 @@ Spin scramble is simply this:
 Every rotation of cells in a small C shape (4 cells, 3 connections), can be rotated around its centre as long as it doesn't rotate cells already being rotated in another viable C shape. So parallel processing is allowed and recommended, but ensure there are no conflicts.
 This can be done with wall Cs or path Cs.
 It MAINTAINS MAZE PERFECTNESS - no new loops or islands are created.
+If an unbiased perfect pattern was discovered with loads of Cs, putting it through SS would make an extremely efficient, perfect, visually unbiased infinite / finite deterministic maze.
 
-A python program is included that fits with FNC to scramble mazes.
+A python program is included that fits with FNC to scramble mazes. (To-be-scrambled maze must be in the same dir as "maze.png")
 
 Maze weaving algorithm:
 This one is quite a bit more complicated.
