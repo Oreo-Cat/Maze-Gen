@@ -1,5 +1,16 @@
 # Maze-Gen
-This repo serves as a final collection of all my projects maze related. I have worked on this project for multiple years, and I have decided to finally stop. I will leave all my data for someone else to push ahead further. The repo includes TeraMaze (world's biggest maze online at time of creating this) and my best algorithms and ideas for infinite maze generation. As well as the least bias algorithm I have been able to find for a locally deterministic (infinite or finite) perfect maze that I can find and a brilliant hashing algorithm for infinite noise from streamed coordinates. Enjoy!
+This repo serves as a final collection of all my projects maze related. I have worked on this project for multiple years, and I have decided to finally stop. I will leave all my data for someone else to push ahead further. The repo includes TeraMaze (world's biggest maze online at time of creating this) and my best algorithms and ideas for infinite maze generation. As well as the least bias algorithm I have been able to find for a locally deterministic (infinite or finite) perfect maze and a brilliant hashing algorithm for infinite noise from streamed coordinates. Enjoy!
+
+Project status: Archived
+
+Contents:<br />
+• TeraMaze – one of the largest online perfect mazes<br />
+• FNC – local deterministic (infinite/finite) maze algorithm<br />
+• Spin Scramble (SS) – bias reduction and maze scrambling while preserving perfectness<br />
+• Maze Weaving – weaving algorithm for deterministic mazes<br />
+• Infinite Noise – streamed-coordinate hashing technique<br />
+
+Development: 2024–2026
 
 <hr />
 
@@ -16,7 +27,7 @@ I will recap the issue here. The maze is generated in chunks, to avoid VRAM and 
 . Further utilisation of queues and stacks<br />
 . Turn off PNG compression for temp files when there is space on device<br />
 
-By fixing these issues, adding the optimisations and generating a final maze, you would easily be able to hold the record for world's biggest maze!
+By fixing these issues, adding the optimisations and generating a final maze, you would possibly be able to hold the record for world's biggest maze!
 I believe I have included the final code in c++ (called Maze_Optimised_300000_Uniform.cpp) in a zip folder also containing the rest of the files I used for testing (files too large such as big mazes were removed). The vips-dev-8.17 folder has been left empty, you will need to download dependencies and reroute file paths if you want to use this direct code. For this reason, the code has not been included as a working prototype but mainly as a learning experience, for iteration and improvement.
 
 <hr />
@@ -78,9 +89,9 @@ This creates a surrounding viewport of a massive noise space around the input co
 Alternatively, you could just pass the entire coordinates, their signs and a delimiter through the Sha512 hash at once.
 
 ## Significance
-TeraMaze displays use of a old chunking technique optimised to the extreme, to show that the true boundaries for maze generation are far beyond the boundaries for image generation. I intend the code and related parts to be used as inspiration to push maze generation even further, rather than as a simple program to run. That is why I have preserved it rather than making it run universally and dependence-free.
+TeraMaze demonstrates how the use of chunked generation can scale maze generation to extremes, to show that the true boundaries for maze generation are far beyond even the boundaries for image generation. I intend the code and related parts to be used as inspiration to push maze generation even further, rather than as a simple program to run. That is why I have preserved it rather than making it run universally and dependence-free.
 
 Binary tree mazes exhibit strong directional bias, since each maze cell only has 2 directions to choose from, FNC aims to solve that issue, by pushing it to three, reducing structural and visible bias whilst preserving the locality, determinism and perfectness of binary tree. SS and Maze weaving squeeze the concept even further, in my experience a less bias algorithm of this type is very difficult to produce without adding insane algorithmic complexity or non-locality.
 
 
-Development ended in August 2026. The repository is now for the preservation of the project for future learning and experimentation.
+Development ended in August 2026... The repository is now for the preservation of the project for future learning and experimentation.
