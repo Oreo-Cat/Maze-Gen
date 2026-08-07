@@ -1,6 +1,8 @@
 # Maze-Gen
 This repo serves as a final collection of all my projects maze related. I have worked on this project for multiple years, and I have decided to finally stop. I will leave all my data for someone else to push ahead further. The repo includes TeraMaze (world's biggest maze online at time of creating this) and my best algorithms and ideas for infinite maze generation. As well as the least bias algorithm I have been able to find for a locally deterministic (infinite or finite) perfect maze that I can find and a brilliant hashing algorithm for infinite noise from streamed coordinates. Enjoy!
 
+<hr />
+
 ![](https://github.com/Oreo-Cat/Maze-Gen/blob/main/Maze%20Banner.png)
 
 ## TeraMaze
@@ -16,6 +18,8 @@ I will recap the issue here. The maze is generated in chunks, to avoid VRAM and 
 
 By fixing these issues, adding the optimisations and generating a final maze, you would easily be able to hold the record for world's biggest maze!
 I believe I have included the final code in c++ (called Maze_Optimised_300000_Uniform.cpp) in a zip folder also containing the rest of the files I used for testing (files too large such as big mazes were removed). The vips-dev-8.17 folder has been left empty, you will need to download dependencies and reroute file paths if you want to use this direct code. For this reason, the code has not been included as a working prototype but mainly as a learning experience, for iteration and improvement.
+
+<hr />
 
 ## InfiniMaze
 Despite there being a lot of test code and working prototypes, I will only include the algorithms I created and core ideas for the project, as to provide a clean slate for anyone wanting to begin.
