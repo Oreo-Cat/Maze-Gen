@@ -1,6 +1,8 @@
 # Maze-Gen
 This repo serves as a final collection of all my projects maze related. I have worked on this project for multiple years, and I have decided to finally stop. I will leave all my data for someone else to push ahead further. The repo includes TeraMaze (world's biggest maze online at time of creating this) and my best algorithms and ideas for infinite maze generation. As well as the least bias algorithm I have been able to find for a locally deterministic (infinite or finite) perfect maze that I can find and a brilliant hashing algorithm for infinite noise from streamed coordinates. Enjoy!
 
+![](https://github.com/Oreo-Cat/Maze-Gen/blob/main/Maze%20Banner.png)
+
 ## TeraMaze
 The final TeraMaze attempt can be found here: https://gigapan.com/gigapans/238145 on Gigapan as one of the largest images the website hosts. It is what I believe to be the world's largest computer generated perfect maze on the internet. On the page you can find some more details on it as well as the issues I left it with. 
 
