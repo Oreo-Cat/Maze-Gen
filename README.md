@@ -38,16 +38,16 @@ If an unbiased perfect pattern was discovered with loads of Cs, putting it throu
 
 A python program is included that fits with FNC to scramble mazes. (To-be-scrambled maze must be in the same dir as "maze.png")
 
-SS Scrambling, Before:
-!(https://github.com/Oreo-Cat/Maze-Gen/blob/main/maze1.png)
-After:
-!(https://github.com/Oreo-Cat/Maze-Gen/blob/main/SS_maze1.png)
+SS Scrambling, Before:<br />
+![](https://github.com/Oreo-Cat/Maze-Gen/blob/main/maze1.png)<br />
+After:<br />
+![](https://github.com/Oreo-Cat/Maze-Gen/blob/main/SS_maze1.png)<br />
 
-Binary Tree VS FNC VS FNC + SS:
-!(https://github.com/Oreo-Cat/Maze-Gen/blob/main/BinT_FNC_FNCSS.png)
+Binary Tree VS FNC VS FNC + SS:<br />
+![](https://github.com/Oreo-Cat/Maze-Gen/blob/main/BinT_FNC_FNCSS.png)<br />
 
-Image showing SS process in multiple passes including various amounts of rotation clockwise (1, 2, 3, Rand) and wall and path SS (TOP), SS conflict-avoiding parrallelisation patterns (MIDDLE), effective locality over multiple SS passes (BOTTOM), SS difference map (DIFF), and effectivity tests (BOTTOM RIGHT) on no BG:
-!(https://github.com/Oreo-Cat/Maze-Gen/blob/main/InfiniMaze%20Test%20No%20BG.png)
+Image showing SS process in multiple passes including various amounts of rotation clockwise (1, 2, 3, Rand) and wall and path SS (TOP), SS conflict-avoiding parrallelisation patterns (MIDDLE), effective locality over multiple SS passes (BOTTOM), SS difference map (DIFF), and effectivity tests (BOTTOM RIGHT) on no BG:<br />
+![](https://github.com/Oreo-Cat/Maze-Gen/blob/main/InfiniMaze%20Test%20No%20BG.png)<br />
 
 ### Maze weaving algorithm:
 This one is quite a bit more complicated.<br />
