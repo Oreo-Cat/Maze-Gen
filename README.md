@@ -56,22 +56,22 @@ If an unbiased perfect pattern was discovered with loads of Cs, putting it throu
 A python program is included that fits with FNC to scramble mazes. (To-be-scrambled maze must be in the same dir as "maze.png")
 
 SS Scrambling, Before:<br />
-![](https://github.com/Oreo-Cat/Maze-Gen/blob/main/maze1.png)<br />
+<img src="https://github.com/Oreo-Cat/Maze-Gen/blob/main/maze1.png" style="width: 150px;"><br />
 After:<br />
-![](https://github.com/Oreo-Cat/Maze-Gen/blob/main/SS_maze1.png)<br />
+<img src="https://github.com/Oreo-Cat/Maze-Gen/blob/main/SS_maze1.png" style="width: 150px;"><br />
 
 Binary Tree VS FNC VS FNC + SS:<br />
-![](https://github.com/Oreo-Cat/Maze-Gen/blob/main/BinT_FNC_FNCSS.png)<br />
+<img src="https://github.com/Oreo-Cat/Maze-Gen/blob/main/BinT_FNC_FNCSS.png" style="width: 150px;"><br />
 
 Image showing SS process in multiple passes including various amounts of rotation clockwise (1, 2, 3, Rand) and wall and path SS (TOP), SS conflict-avoiding parrallelisation patterns (MIDDLE), effective locality over multiple SS passes (BOTTOM), SS difference map (DIFF), and effectivity tests (BOTTOM RIGHT) on no BG:<br />
-![](https://github.com/Oreo-Cat/Maze-Gen/blob/main/InfiniMaze%20Test%20No%20BG.png)<br />
+<img src="https://github.com/Oreo-Cat/Maze-Gen/blob/main/InfiniMaze%20Test%20No%20BG.png" style="width: 200px;"><br />
 
 ### Maze weaving algorithm:
 This one is quite a bit more complicated.<br />
 It Goes as such:<br />
 First choose an orientation (vertical or horizontal), then choose a bias fallback direction perpendicular to the orientation (eg. vertical and left, horizontal and up). In this run-through, I will choose horizontal and down. First we initialise all horizontal rows we care about (in the viewport) with either 0 or 1 (left or right), we can do this using deterministic hashed noise for infinite deterministic mazes (below). This creates loads of horizontal lines pointing either left or right. Then between each row, we add vertical connections randomly (again, hashed noise for infinite mazes), if the connections are between two rows that go in the same direction (both 0 or both 1), then the connection can be up or down (choose randomly, deterministically for infinite mazes (eg. using hashed noise)). If between different rows, it can only be in our bias fallback direction, in this case, down. Finally, since one cell in a perfect maze can only have one OUTGOING connection, any cells that connect outwards (point to another cell, being pointed to does not count) horizontally and vertically, break their horizontal connections.
 <br />
-![]([https://github.com/Oreo-Cat/Maze-Gen/blob/main/Weave.jpg])
+<img src="https://github.com/Oreo-Cat/Maze-Gen/blob/main/Weave.jpg" style="width: 200px;">
 <br />
 The final result is multiple FNC-style mazes with various bias directions joined together, it removes any small scale and most large scale bias. Passing it through SS afterwards creates the least bias algorithm that I can find for a locally deterministic perfect maze.
 
