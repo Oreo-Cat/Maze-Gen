@@ -71,7 +71,7 @@ This one is quite a bit more complicated.<br />
 It Goes as such:<br />
 First choose an orientation (vertical or horizontal), then choose a bias fallback direction perpendicular to the orientation (eg. vertical and left, horizontal and up). In this run-through, I will choose horizontal and down. First we initialise all horizontal rows we care about (in the viewport) with either 0 or 1 (left or right), we can do this using deterministic hashed noise for infinite deterministic mazes (below). This creates loads of horizontal lines pointing either left or right. Then between each row, we add vertical connections randomly (again, hashed noise for infinite mazes), if the connections are between two rows that go in the same direction (both 0 or both 1), then the connection can be up or down (choose randomly, deterministically for infinite mazes (eg. using hashed noise)). If between different rows, it can only be in our bias fallback direction, in this case, down. Finally, since one cell in a perfect maze can only have one OUTGOING connection, any cells that connect outwards (point to another cell, being pointed to does not count) horizontally and vertically, break their horizontal connections.
 <br />
-<img src="https://github.com/Oreo-Cat/Maze-Gen/blob/main/Weave1.jpg" style="width: 200px;">
+<img src="https://github.com/Oreo-Cat/Maze-Gen/blob/main/Weave.jpg" style="width: 200px;">
 <br />
 The final result is multiple FNC-style mazes with various bias directions joined together, it removes any small scale and most large scale bias. Passing it through SS afterwards creates the least bias algorithm that I can find for a locally deterministic perfect maze.
 
